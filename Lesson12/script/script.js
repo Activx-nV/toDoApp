@@ -12,7 +12,6 @@ const render = function () {
     todoCompleted.textContent = '';
 
 
-
     todoData.forEach(function (item, i) {
         const li = document.createElement('li');
         li.classList.add('todo-item');
@@ -49,12 +48,8 @@ const render = function () {
 
         const btnTodoComplete = li.querySelector('.todo-complete');
         btnTodoComplete.addEventListener('click', function () {
-            console.log(item.completed);
             item.completed = !item.completed;
-            console.log(item.completed);
-            console.log(todoData);
             localStorage.setItem('todos', JSON.stringify(todoData));
-            console.log(todoData);
             render();
         });
     });
