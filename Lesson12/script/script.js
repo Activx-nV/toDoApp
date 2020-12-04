@@ -31,7 +31,7 @@ const render = function () {
         const btnTodoRemove = li.querySelector('.todo-remove');
         btnTodoRemove.addEventListener('click', function () {
             todoData.splice(i, 1);
-            localStorage.setItem('todos', todoData);
+            localStorage.setItem('todos', JSON.stringify(todoData));
             // let todos;
             // if (localStorage.getItem('todos') === null) {
             //     todos = [];
