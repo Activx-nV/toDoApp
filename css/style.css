@@ -211,12 +211,12 @@ body {
 }
 
 .todo:empty:after {
-    content: 'Нет задач';
+    content: 'No tasks';
     margin: 15px 0 0 0;
 }
 
 .todo-completed:empty:after {
-    content: 'Нет выполненых задач';
+    content: 'No completed tasks';
 }
 
 .todo:after,
